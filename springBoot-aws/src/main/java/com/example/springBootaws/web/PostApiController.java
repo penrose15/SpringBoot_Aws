@@ -31,4 +31,10 @@ public class PostApiController {
     public PostResponseDto findById(@PathVariable Long id) {
         return postService.findById(id);
     }
+
+    @DeleteMapping("/post/{id}")
+    public ResponseEntity<Void> deleteById(@PathVariable Long id) {
+        postService.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

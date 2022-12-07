@@ -33,5 +33,10 @@ public class PostService {
         return PostResponseDto.of(entity);
     }
 
+    public void deleteById(Long id) {
+        Post post = postRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시물이 존재하지 않습니다. + id : " + id));
+        postRepository.delete(post);
+    }
+
 
 }
