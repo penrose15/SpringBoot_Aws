@@ -1,6 +1,6 @@
 package com.example.springBootaws;
 
-import com.example.springBootaws.web.HelloController;
+import com.example.springBootaws.web.practice.HelloController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

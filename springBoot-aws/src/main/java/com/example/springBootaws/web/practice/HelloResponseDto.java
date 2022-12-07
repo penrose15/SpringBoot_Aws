@@ -1,4 +1,4 @@
-package com.example.springBootaws.web;
+package com.example.springBootaws.web.practice;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

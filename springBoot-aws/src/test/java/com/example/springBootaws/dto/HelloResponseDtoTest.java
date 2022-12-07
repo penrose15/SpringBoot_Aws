@@ -1,6 +1,6 @@
 package com.example.springBootaws.dto;
 
-import com.example.springBootaws.web.HelloResponseDto;
+import com.example.springBootaws.web.practice.HelloResponseDto;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
