@@ -2,8 +2,9 @@ package com.example.springBootaws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
-@SpringBootTest
+//@SpringBootTest
 class SpringBootAwsApplicationTests {
 
 	@Test

@@ -1,6 +1,6 @@
 package com.example.springBootaws.web.dto;
 
-import com.example.springBootaws.domain.post.Post;
+import com.example.springBootaws.domain.post.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,8 +19,8 @@ public class PostsSaveRequestDto {
         this.author = author;
     }
 
-    public Post toEntity() {
-        return Post.builder()
+    public Posts toEntity() {
+        return Posts.builder()
                 .title(title)
                 .content(content)
                 .author(author)
