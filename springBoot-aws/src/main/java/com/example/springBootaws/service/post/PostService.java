@@ -56,5 +56,14 @@ public class PostService {
         postsRepository.delete(posts);
     }
 
+    public List<PostsListResponseDto> findAllByTitleOrContent(String search, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size, Sort.Direction.DESC, "id");
+
+        return postsRepositoryImpl.findAllByTitleOrContent(search, pageable)
+                .stream()
+                .map(PostsListResponseDto::new)
+                .collect(Collectors.toList());
+    }
+
 
 }

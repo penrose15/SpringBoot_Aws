@@ -5,6 +5,9 @@
         <div class="col-md-6">
             <a href="/post/save" role="button"
                class="btn btn-primary">post</a>
+            <form><input type="text" class="form-control"
+                         id="search"></form>
+            <button type="button" class="btn btn-secondary" id="btn-search">search</button>
         </div>
     </div>
     <br>
@@ -21,7 +24,7 @@
         {{#posts}}
             <tr>
                 <td>{{id}}</td>
-                <td>{{title}}</td>
+                <td><a href="/post/update/{{id}}">{{title}}</a></td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>
