@@ -1,4 +1,4 @@
-package com.example.springBootaws.config;
+package com.example.springBootaws.config.queryDSL;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.context.annotation.Bean;

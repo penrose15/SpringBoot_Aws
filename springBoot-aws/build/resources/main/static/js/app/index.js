@@ -10,9 +10,6 @@ var main = {
         $('#btn-delete').on('click', function() {
             _this.delete();
         });
-        $('#btn-search').on('click', function() {
-                    _this.search();
-                });
     },
     save : function () {
         var data = {
@@ -64,25 +61,6 @@ var main = {
                     }).done(function() {
                         alert('delete complete');
                         window.location.href = '/?page=1&size=10';
-                    }).fail(function(error) {
-                        alert(JSON.stringify(error));
-                    });
-
-        },
-    search : function(page, size) {
-
-            var data = {
-                search: $('#search').val()
-            };
-            var id = $('#id').val();
-
-            $.ajax({
-                        type: 'GET',
-                        url: '/api/v1/post/' +search,
-                        dataType: 'json',
-                        contentType: 'application/json; charset=utf-8',
-                        data: JSON.stringify(data)
-                    }).done(function() {
                     }).fail(function(error) {
                         alert(JSON.stringify(error));
                     });
