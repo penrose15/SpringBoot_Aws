@@ -1,10 +1,12 @@
 package com.example.springBootaws.dto;
 
+import com.example.springBootaws.TestConfig;
 import com.example.springBootaws.web.practice.HelloResponseDto;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.Import;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+@Import(TestConfig.class)
 public class HelloResponseDtoTest {
 
     @Test
