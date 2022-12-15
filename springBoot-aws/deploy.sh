@@ -7,7 +7,6 @@ cd $REPOSITORY/$PROJECT_NAME/
 
 echo "> git pull"
 
-git pull
 
 echo "project build start"
 
@@ -44,5 +43,5 @@ echo "> JAR Name: $JAR_NAME"
 echo "> $JAR_NAME 실행"
 
 nohup java -jar \
-            -Dspring.config.location=classpath:/application.properties,/home/ubuntu/SpringBoot_Aws/application-oauth.properties\
-            $REPOSITORY/$JAR_NAME 2>&1 &
+            -Dspring.config.location=classpath:/application.properties,classpath:/application-real.properties,/home/ubuntu/SpringBoot_Aws/application-oauth.properties,/home/ubuntu/SpringBoot_Aws/application-real-db.properties\
+            -Dspring.profiles.active=real
